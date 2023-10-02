@@ -12,7 +12,7 @@ export const AddTransaction = () => {
 
         const newTransaction = {
             id: Math.floor(Math.random() * 100000000),
-            text,
+            text : text,
             amount: +amount
         }
 
@@ -29,10 +29,7 @@ export const AddTransaction = () => {
 
                 </div>
                 <div className="form-control">
-                    <label htmlFor="amount"
-                    >Amount <br />
-                        (negative - expense, positive - income)</label
-                    >
+                    <label htmlFor="amount">Amount <br /> (negative - expense, positive - income)</label>
                     <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Enter amount..." />
 
                 </div>
